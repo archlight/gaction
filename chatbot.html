@@ -1,0 +1,36 @@
+{% extends "app.html" %}
+
+{% block content %}
+
+{{ super() }}
+
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<div class="ibox chat-view">
+
+		    <div class="ibox-title">
+		        <small class="pull-right text-muted">search news headline</small>
+		         Chatbot
+		    </div>
+
+		    <div class="ibox-content">
+
+		        <div class="chat-discussion"></div>
+
+	            <div class="chat-message-form">
+	                <div class="form-group">
+
+	                    <input id="input" class="form-control message-input" name="message" placeholder="Enter message text"></input>
+	                </div>
+	            </div>
+
+		    </div>
+
+		</div>	
+	</div>
+	<div class="col-md-3"></div>
+</div>
+
+
+{% endblock %}

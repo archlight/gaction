@@ -1,0 +1,26 @@
+{% extends "app.html" %}
+
+{% block content %}
+
+{{ super() }}
+
+<div class="row">
+	<center>
+		<button id="webhook" class="btn btn-default">Webhook</button>
+	</center>
+</div>
+<div class="row">
+
+	<div class="col-md-1"></div>
+	<div class="col-md-5">
+		<textarea id="request" class="form-control" rows="100"></textarea>
+	</div>
+	<div class="col-md-5">
+		<textarea id="response" class="form-control" rows="100"></textarea>
+	</div>
+	<div class="col-md-1"></div>
+
+</div>
+
+
+{% endblock %}
